@@ -1,0 +1,21 @@
+/*Requête Média pour un grand écran */
+@media screen and (min-width: 1000px) {
+
+    header {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+        position: relative;
+        bottom: 4vh;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+
+
+}

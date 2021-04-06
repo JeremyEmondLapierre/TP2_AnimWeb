@@ -1,0 +1,48 @@
+/********************************************************Top de la page****************************************/
+header {
+    background-color: saddlebrown;
+    color: white;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    height: 8vh;
+
+}
+
+
+/************************************************************************************************************/
+
+/***********************************Footer*********************************/
+footer {
+    font-size: 0.8rem;
+    height: 10.5vh;
+    color: white;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+}
+
+/**********************************************************************/
+
+
+
+
+/*Requête média pour un petit écran*/
+@media screen and (max-width: 525px) {
+
+
+    h1{
+        position: relative;
+        bottom: 3vh;
+    }
+    
+    footer{
+        font-size: 0.7rem;
+    }
+
+
+
+
+   
+}

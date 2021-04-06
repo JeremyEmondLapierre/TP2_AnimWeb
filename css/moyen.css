@@ -1,0 +1,21 @@
+/*Requête média pour un écran moyen */
+@media screen and (min-width: 526px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        position: relative;
+        bottom: 3vh;
+    }
+    
+    footer{
+        font-size: 1rem;
+    }
+
+
+
+}

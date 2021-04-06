@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Exercice avec grilles</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Démo avec grilles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/petit.css" rel="stylesheet" />
+    <link href="css/moyen.css" rel="stylesheet" />
+    <link href="css/grand.css" rel="stylesheet" />
+    <link href="css/anim.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Elements dans la grid -->
+
+
+    <header>
+        <h1>Travail pratique 2</h1>
+    </header>
+
+    <div id="slider">
+        <form>
+            <section id="slider1">
+
+                <h2>Section 1</h2>
+
+                <label>
+                    <input type="text" id="utilisateur" placeholder=" " name="utilisateur">
+                    <h6>Utilisateur</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <label>
+                    <input type="text" id="mdp" placeholder=" " name="mdp">
+                    <h6>Mot de passe</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <input type="button" value="Suivant" id="suivant1" >
+            </section>
+        </form>
+
+        <form>
+
+            <section id="slider2">
+                <h2>Section 2</h2>
+                <label>
+                    <input type="text" id="pays" placeholder=" " >
+                    <h6>Pays</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <label>
+                    <input type="text" id="prov" placeholder=" " >
+                    <h6>Province</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <label>
+                    <input type="text" id="ville" placeholder=" " >
+                    <h6>Ville</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <input type="button" value="Suivant" id="suivant2" >
+            </section>
+        </form>
+
+
+        <form>
+            <section id="slider3">
+                <h2>Section 3</h2>
+
+                <label>
+                    <input type="text" id="adresse" placeholder=" " >
+                    <h6>Adresse et rue</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <label>
+                    <input type="text" id="postal" placeholder=" " >
+                    <h6>Code postal</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <label>
+                    <input type="text" id="tel" placeholder=" " >
+                    <h6>Téléphone</h6>
+                    <span class='ligne'></span>
+                </label>
+
+                <input type="button" value="Suivant" id="suivant3">
+            </section>
+        </form>
+
+        <form>
+            <section id="slider4">
+                <h2>Section4</h2>
+                
+                <div class="grid">
+                    <div class="utilisateur">Utilisateur</div>
+                    <div class="utilisateurValeur">1</div>
+                    <div class="mdp">Mot de passe</div>
+                    <div class="mdpValeur">2</div>
+                    <div class="pays">Pays</div>
+                    <div class="paysValeur">3</div>
+                    <div class="province">Province</div>
+                    <div class="provinceValeur">5</div>
+                    <div class="ville">Ville</div>
+                    <div class="villeValeur">7</div>
+                    <div class="adresse">Adresse et rue</div>
+                    <div class="adresseValeur">9</div>
+                    <div class="postal">Code postal</div>
+                    <div class="postalValeur">10</div>
+                    <div class="tel">Téléphone</div>
+                    <div class="telValeur">11</div>
+                </div>
+            </section>
+        </form>
+
+
+
+    </div>
+
+    <div id="buttons">
+        <input class="actif" type="button" value="1" id="button1">
+        <input type="button" value="2" id="button2">
+        <input type="button" value="3" id="button3">
+        <input type="button" value="4" id="button4">
+    </div>
+
+    <footer>
+        <h3>582-282 Animation et interactivité Web <br>Jérémy Emond-Lapierre &copy;2020</h3>
+    </footer>
+
+
+
+</body>
+
+<script src="js/fonctions.js"></script>
+<script src="js/init.js"></script></html>
+

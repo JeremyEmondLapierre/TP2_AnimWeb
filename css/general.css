@@ -1,0 +1,166 @@
+/*Styles généraux pour body*/
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/*****Style pour le slider central*******/
+#slider {
+    height: 80vh;
+    width: 400vw;
+    display: flex;
+    background-color: blanchedalmond;
+
+}
+
+#slider1 {
+    width: 100vw;
+    height: 80vh;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center
+}
+
+
+
+#slider2 {
+    width: 100vw;
+    height: 80vh;
+}
+
+#slider3 {
+    width: 100vw;
+    height: 80vh;
+}
+
+#slider4 {
+    width: 100vw;
+    height: 80vh;
+}
+
+/*Bouton suivant à la fin de chaque formulaire*/
+#suivant1,
+#suivant2,
+#suivant3 {
+    color: white;
+    font-size: 1.2em;
+    background-color: black;
+    margin-top: 10vh;
+    border-radius: 15px;
+}
+
+/*Gestion des lignes de formulaire et de l'animation de la ligne avec le texte*/
+form input {
+    border: none;
+    /* enlève le contour */
+    outline: none;
+    /* enlève le contour */
+    background-color: blanchedalmond;
+    width: 50%;
+    margin-left: 25vw;
+}
+
+span.ligne {
+    opacity: 0.5;
+    display: block;
+    height: 3px;
+    background-color: black;
+    transform: scaleX(0.5);
+}
+
+form label {
+    display: block;
+    position: relative;
+    margin-top: 75px;
+}
+
+form h6 {
+    position: absolute;
+    bottom: -20px;
+    margin-left: 43vw;
+    transform: scale(1.9) translateX(1em);
+    opacity: 0.5;
+    transition: bottom .5s, transform .5s;
+}
+
+form input:focus + h6,
+form input:not(:placeholder-shown) + h6 {
+    bottom: 2em;
+    transform: scale(1.4) translateX(-4em);
+    opacity: 0.7;
+}
+
+span.ligne::after {
+    content: "";
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    background-color: rgb(0, 132, 255);
+    transition-duration: 1s;
+}
+
+form input:focus ~ span.ligne::after {
+    left: 0;
+    right: 0;
+}
+
+/*Petits boutons de navigations en bas de la page*/
+#buttons {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100vw;
+    bottom: 10vh;
+}
+
+
+
+#button1,
+#button2,
+#button3,
+#button4 {
+    margin: 5px;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+.actif {
+    color: red;
+}
+
+/*Animation de la partie centrale*/
+.swipe1 {
+    animation-name: swipe1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.swipe2 {
+    animation-name: swipe2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.swipe3 {
+    animation-name: swipe3;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*Gestion de la gird*/
+.grid {
+    font-size: 1.4rem;
+    width: 30vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 140px 140px;
+}
+
+/*****Fin des styles pour le slider central*******/
